@@ -4,6 +4,8 @@ import * as state from "./store";
 import axios from "axios";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
+import dotenv from "dotenv";
+dotenv.config();
 
 // 2. Declaring Router
 const router = new Navigo(window.location.origin);

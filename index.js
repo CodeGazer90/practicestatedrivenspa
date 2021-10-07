@@ -86,16 +86,16 @@ router.hooks({
     if (page === "Pizza") {
       axios
         .get(`${process.env.PIZZA_PLACE_API_URL}`)
-        .then(response => {
+        // eslint-disable-next-line prettier/prettier
+        .then((response) => {
           state.Pizza.pizzas = response.data;
           done();
         })
-        .catch(error => {
+        // eslint-disable-next-line prettier/prettier
+        .catch((error) => {
           console.log("It puked", error);
         });
     }
-  }
-});
 
 // 6. Router.on
 router
